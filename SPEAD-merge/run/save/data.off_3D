@@ -1,14 +1,14 @@
  &OFFLINE_PARM01
-  UvelFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDuvel',
-  VvelFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDvvel',
-  WvelFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDwvel',
-  GMwxFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Gm2_ave/DGMkwx',
-  GMwyFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Gm2_ave/DGMkwy',
-  GMwzFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Gm2_ave/DGMkwz',
-  SaltFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDsalt',
-  ThetFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDtheta',
+  UvelFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDuvel',
+  VvelFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDvvel',
+  WvelFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDwvel',
+  GMwxFile= '/home/SPEAD/CIRC/iter177/Gm2_ave/DGMkwx',
+  GMwyFile= '/home/SPEAD/CIRC/iter177/Gm2_ave/DGMkwy',
+  GMwzFile= '/home/SPEAD/CIRC/iter177/Gm2_ave/DGMkwz',
+  SaltFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDsalt',
+  ThetFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDtheta',
   SFluxFile='',
-  KPP_DiffSFile='/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Kpp2_ave/DKPPdifs',
+  KPP_DiffSFile='/home/SPEAD/CIRC/iter177/Kpp2_ave/DKPPdifs',
  &end
 
  &OFFLINE_PARM02
