@@ -1,7 +1,7 @@
 &OFFLINE_PARM01
-WvelFile='../../SPEAD-1D/input/VEL/wVel_sargasso', 
-ThetFile='../../SPEAD-1D/input/TEMP/temp_sargasso',
-KPP_DiffSFile='../../SPEAD-1D/input/KPP/KzGOTM_sargasso',
+WvelFile='../input/1D/VEL/wVel_sargasso', 
+ThetFile='../input/1D/TEMP/temp_sargasso',
+KPP_DiffSFile='../input/1D/KPP/KzGOTM_sargasso',
 /
 
 &OFFLINE_PARM02
