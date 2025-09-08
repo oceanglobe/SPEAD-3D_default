@@ -1,0 +1,19 @@
+ &OFFLINE_PARM01
+  UvelFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDuvel',
+  VvelFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDvvel',
+  WvelFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDwvel',
+  GMwxFile= '/home/SPEAD/CIRC/iter177/Gm2_ave/DGMkwx',
+  GMwyFile= '/home/SPEAD/CIRC/iter177/Gm2_ave/DGMkwy',
+  GMwzFile= '/home/SPEAD/CIRC/iter177/Gm2_ave/DGMkwz',
+  SaltFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDsalt',
+  ThetFile= '/home/SPEAD/CIRC/iter177/Dynvars2_ave/DDtheta',
+  SFluxFile='',
+  KPP_DiffSFile='/home/SPEAD/CIRC/iter177/Kpp2_ave/DKPPdifs',
+ &end
+
+ &OFFLINE_PARM02
+  offlineIter0=0,
+  deltaToffline=3600.,
+  offlineForcingPeriod=2592000.,
+  offlineForcingCycle=31104000.,
+ &end
