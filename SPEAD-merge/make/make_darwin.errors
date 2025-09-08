@@ -1,0 +1,4 @@
+make: Nothing to be done for 'clean_old'.
+../../tools/darwin/cog -c -r darwin_check.F
+/usr/bin/env: ‘python’: No such file or directory
+make: *** [Makefile:6: cog] Error 127
