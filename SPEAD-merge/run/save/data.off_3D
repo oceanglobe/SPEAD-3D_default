@@ -1,0 +1,19 @@
+ &OFFLINE_PARM01
+  UvelFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDuvel',
+  VvelFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDvvel',
+  WvelFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDwvel',
+  GMwxFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Gm2_ave/DGMkwx',
+  GMwyFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Gm2_ave/DGMkwy',
+  GMwzFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Gm2_ave/DGMkwz',
+  SaltFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDsalt',
+  ThetFile= '/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Dynvars2_ave/DDtheta',
+  SFluxFile='',
+  KPP_DiffSFile='/home/oceanglobe/shared/DARWIN/ECCOgcm/iter177/Kpp2_ave/DKPPdifs',
+ &end
+
+ &OFFLINE_PARM02
+  offlineIter0=0,
+  deltaToffline=3600.,
+  offlineForcingPeriod=2592000.,
+  offlineForcingCycle=31104000.,
+ &end

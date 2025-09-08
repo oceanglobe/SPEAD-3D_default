@@ -1,0 +1,13 @@
+&OFFLINE_PARM01
+WvelFile='../../SPEAD-1D/input/VEL/wVel_sargasso', 
+ThetFile='../../SPEAD-1D/input/TEMP/temp_sargasso',
+KPP_DiffSFile='../../SPEAD-1D/input/KPP/KzGOTM_sargasso',
+/
+
+&OFFLINE_PARM02
+offlineIter0=000000,
+deltaToffline=10800.,
+#offlineForcingPeriod=2592000., ! 1 month
+offlineForcingPeriod=86400., ! 1 day
+offlineForcingCycle=31104000.,
+/

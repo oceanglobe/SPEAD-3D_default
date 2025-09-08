@@ -1,0 +1,119 @@
+#
+# ******************************
+# Model parameters
+# Continuous equation parameters
+# ******************************
+&PARM01
+tRef= 21.6, 21.6, 21.6, 21.6, 21.5, 21.5, 21.5, 21.5, 21.5,
+      21.5, 21.4, 21.4, 21.4, 21.4, 21.4, 21.4, 21.4, 21.4,
+      21.4, 21.4, 21.4, 21.4, 21.4, 21.4, 21.3, 21.3, 21.3,
+      21.3, 21.2, 21.2, 21.2, 21.1, 21.1, 21.1, 21.0, 21.0,
+      20.9, 20.9, 20.8, 20.6, 20.6, 20.6, 20.5, 20.4, 20.3,
+      20.2, 20.1, 20.0, 20.0, 19.9, 19.8, 19.7, 19.7, 19.6,
+      19.5, 19.5, 19.4, 19.4, 19.3, 19.3, 19.2, 19.2, 19.2,
+      19.2, 19.2, 19.2, 19.2, 19.2, 19.2, 19.2, 19.1, 19.1,
+      19.1, 19.0, 19.0, 19.0, 18.9, 18.9, 18.8, 18.8,
+sRef= 80*36.67,
+no_slip_sides=.false.,
+no_slip_bottom=.TRUE.,
+viscAz=0.e0,
+viscAh=0.e0,
+diffKhT=1.E2,
+diffKzT=1.E-4,
+diffKhS=0.D0,
+diffKzS=0.D0,
+beta=1.E-11,
+tAlpha=2.E-4,
+sBeta =7.4E-4,
+gravity=9.81,
+gBaro=9.81,
+rigidLid=.TRUE.,
+implicitFreeSurface=.false.,
+eosType='JMD95Z',
+saltStepping=.TRUE.,
+tempStepping=.TRUE.,
+tempAdvection=.TRUE.,
+momStepping=.FALSE.,
+implicitDiffusion=.true.,
+implicitViscosity=.true.,
+allowFreezing=.false.,
+useSingleCpuIO=.TRUE.,
+useCDscheme=.FALSE.,
+tempAdvScheme = 3,
+saltAdvScheme = 3,
+writebinaryprec=64,
+/
+
+# **************************
+# Elliptic solver parameters
+# **************************
+&PARM02
+cg2dMaxIters=300,
+cg2dTargetResidual=1.E-7,
+/
+
+# ************************
+# Time stepping parameters
+# ************************
+&PARM03
+ nIter0=000000,
+ nTimeSteps=8640,
+## endtime=43200.,
+ deltaTmom=10800.,
+ deltaTtracer=10800.,
+ deltaTClock =10800.,
+#benw set to 0. to switch off cAdj (?)
+ cAdjFreq=0.,
+ abEps=0.1,
+ pChkptFreq  = 31104000.0,
+ chkptFreq   = 31104000.0,
+ monitorFreq = 1.,
+ dumpFreq = 0.,
+ dumpInitAndLast = .TRUE.,
+## taveFreq    = 86400.,
+ tauThetaClimRelax=21600.,
+ tauSaltClimRelax=21600.,
+ periodicExternalForcing=.TRUE.,
+ externForcingPeriod=2592000.,
+ externForcingCycle=31104000.,
+/
+
+# *******************
+# Gridding parameters
+# *******************
+&PARM04
+usingCartesianGrid=.FALSE.,
+usingSphericalPolarGrid=.TRUE.,
+delX=1*1.E0,
+delY=1*1.E0,
+#delZ=14*10, 5*15, 4*20, 2*50, 100, 2*150, 200, 300, 3*400, 2*500,
+#xgOrigin=335,
+#ygOrigin=-18.,
+#delZ=20*10,
+delZ=80*2.5E0,
+xgOrigin=295,
+ygOrigin=30,
+/
+
+# **********
+# Data Files
+# **********
+&PARM05
+#bathyFile=       '../input/bathyneg.bin',
+#hydrogThetaFile= '../input/loc1_temp_janprof.bin',
+#hydrogSaltFile=  '../input/salt_uniform.bin',
+#zonalWindFile=   '../input/wind_u_mon.bin',
+#meridWindFile=   '../input/wind_v_mon.bin',
+#thetaClimFile=   '../input/loc1_temp_monsurf.bin',
+bathyFile=       '../../SPEAD-1D/input/bathyneg_sargasso.bin',
+#hydrogThetaFile= '../input/loc1_temp_janprof_sargasso.bin',
+#hydrogSaltFile=  '../input/salt_uniform_sargasso.bin',
+zonalWindFile=   '../../SPEAD-1D/input/wind_u_mon_sargasso.bin',
+meridWindFile=   '../../SPEAD-1D/input/wind_v_mon_sargasso.bin',
+thetaClimFile=   '../../SPEAD-1D/input/loc1_temp_monsurf_sargasso.bin',
+#saltClimFile=    '',
+saltClimFile=    '../../SPEAD-1D/input/loc1_salt_monsurf_sargasso.bin',
+#saltClimFile=    '../input/loc1_salt_monsurf.bin',
+surfQFile=       '',
+EmPmRFile=       '',
+/
